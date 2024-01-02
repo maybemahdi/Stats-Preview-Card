@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+    height: 100vh;
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mob {
+    display: none
+}
+
+.card {
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    width:1100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-body {
+    flex-basis: 50%;
+    padding: 70px 40px 70px 70px;
+}
+
+.card-image {
+    flex-basis: 50%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+    background-color: rgba(129, 5, 167, 0.408);
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 100%);
+}
+.color{
+    color: hsl(277, 64%, 61%);
+}
+h5{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 70px;
+    color: hsla(291, 42%, 87%, 0.758);
+}
+.in{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+    display: inline;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.in span{
+    font-size: 14px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: hsla(291, 42%, 87%, 0.758);
+}
+
+
+
+@media only screen and (max-width:420px) {
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    .card{
+        flex-direction: column-reverse;
+        width: 375px;
+    }
+    .desk{
+        display: none;
+    }
+    .mob{
+        display:block
+    }
+    .card-body{
+        flex-basis: 70%;
+        text-align: center;
+        padding: 40px;
+    }
+    .card-image{
+        flex-basis: 30%;
+    }
+    img{
+        border-radius: 8px 8px 0 0;
+    }
+    h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    h5{
+        margin-bottom: 50px;
+    }
+   .in{
+    width: 100%;
+   }
+}
